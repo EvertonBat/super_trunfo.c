@@ -18,7 +18,9 @@ int main() {
     printf("Digite a quantidade de populacao: ");
     scanf("%d", &populacao1);
 
-    
+    printf("Digite a area da cidada em quilometros quadrados (somento numeros e pontos) ");
+    scanf("%f", &area1);
+       
 
     return 0;
 }
