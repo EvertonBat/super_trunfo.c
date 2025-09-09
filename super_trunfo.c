@@ -20,7 +20,12 @@ int main() {
 
     printf("Digite a area da cidada em quilometros quadrados (somento numeros e pontos) ");
     scanf("%f", &area1);
-       
 
+    printf("Digite o PIB da cidade (Produto Interno Bruto): ");
+    scanf("%f", &pib1);
+
+    printf("Digite quantos pontos turisticos tem a cidade: ");
+    scanf("%d",&ponto_turisticos1);
+    
     return 0;
 }
