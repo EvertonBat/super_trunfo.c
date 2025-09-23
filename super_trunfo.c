@@ -3,7 +3,8 @@
 int main() {
     char estado1,estado2;
     char cidade1[20],cidade2[20],codigo1[5],codigo2[5];
-    int populacao1,populacao2,ponto_turisticos1,ponto_turisticos2;
+    int ponto_turisticos1,ponto_turisticos2;
+    long int populacao1,populacao2;
     float area1,area2,pib1,pib2,densidade1,densidade2,pib_capita1,pib_capita2;
     
    
