@@ -122,9 +122,10 @@ int main() {
     // switch referente a escolha a cima 
 
     switch (num){
+
         //Caso seja população escolhida
         case 1:
-            printf("%c || %c\n", estado1,estado2);
+            printf("%s || %s\n", cidade1,cidade2);
             printf("Atributo:População\n");
             printf("Valor da primeira carta %d, Valor da segunda carta %d\n", populacao1,populacao2);
             if (populacao1 > populacao2){
@@ -136,9 +137,10 @@ int main() {
             else{
                 printf("Empate");
             }
+
         //Caso seja area escolhida
         case 2:
-            printf("%c || %c\n", estado1,estado2);
+            printf("%s || %s\n", cidade1,cidade2);
             printf("Atributo:Área\n");
             printf("Valor da primeira carta %d, Valor da segunda carta %d\n", area1,area2);
             if (area1 > area2){
@@ -150,7 +152,21 @@ int main() {
             else{
                 printf("Empate");
             }
-            
+        
+        //Caso seja PIB escolhida
+        case 3: 
+            printf("%s || %s\n", cidade1,cidade2);
+            printf("Atributo:PIB\n");
+            printf("Valor da primeira carta %d, Valor da segunda carta %d\n", pib1,pib2);
+            if (pib1 > pib2){
+                printf("A carta vencedora foi a primeira carta:%d",pib1);
+            }
+            else if (pib2 > pib1){
+                printf("A carta vencedora foi a segunda carta:%d",pib2);
+            }
+            else{
+                printf("Empate");
+            }
     }
 
     return 0;
