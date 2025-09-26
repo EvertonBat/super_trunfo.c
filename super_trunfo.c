@@ -3,7 +3,7 @@
 int main() {
     char estado1,estado2;
     char cidade1[20],cidade2[20],codigo1[5],codigo2[5];
-    int ponto_turisticos1,ponto_turisticos2;
+    int ponto_turisticos1,ponto_turisticos2,num;
     long int populacao1,populacao2;
     float area1,area2,pib1,pib2,densidade1,densidade2,pib_capita1,pib_capita2;
     
@@ -110,63 +110,16 @@ int main() {
     printf("PIB per Capita: %f\n", pib_capita2);
 
 
-    printf("Comparação de Cartas: \n");
-    //comparação da populacao 
-    if (c1 == 1){
-        printf ("População: Carta 1 venceu (%d)\n", c1);
-    }
-    else{
-         printf ("População: Carta 2 venceu (%d)\n", c1);
-    }
+    printf("Agora escolha um atributo para fazer a comparação\n");
+    printf("1.População\n");
+    printf("2.Área\n");
+    printf("3.PIB\n");
+    printf("4.Pontos turisticos\n");
+    printf("5.Densidade populacional\n");
+    printf("Escolha aqui: \n");
+    scanf("%d", &num);
 
-    //comparacao da area 
-    if (c2 == 1){
-        printf ("Área: Carta 1 venceu (%d)\n", c2);
-    }
-    else{
-         printf ("Área: Carta 2 venceu (%d)\n", c2);
-    }
-
-    //Comparacao do PIB
-
-    if (c3 == 1){
-        printf ("PIB: Carta 1 venceu (%d)\n", c3);
-    }
-    else{
-         printf ("PIB: Carta 2 venceu (%d)\n", c3);
-    }
-
-    //Comparaçao do Pontos Turisticos 
-    if (c4 == 1){
-        printf("Pontos Turísticos: Carta 1 venceu (%d)\n", c4);
-    }
-    else{
-        printf("Pontos Turísticos: Carta 2 venceu (%d)\n",c4);
-    }
-
-    //Comparação do Densidade Populacional
-    if (c5 == 1){
-        printf("Densidade Populacional: Carta 1 venceu (%d)\n", c5);
-    }
-    else{
-        printf("Densidade Populacional: Carta 2 venceu (%d)\n", c5);
-    }
-
-    //Comparacao PIB per Capita
-    if (c6 == 1){
-        printf("PIB per Capita: Carta 1 venceu(%d)\n", c6);
-    }
-    else{
-        printf("PIB per Capita: Carta 2 venceu(%d)\n",c6);
-    }
-
-    //Comparacao Super Poder 
-    if (c7 == 1){
-        printf("Super Poder: Carta 1 venceu(%d)\n", c7);
-    }
-    else{
-        printf("Super Poder: Carta 2 venceu(%d)\n",c7);
-    }
+    switch (num)
 
     return 0;
 }
