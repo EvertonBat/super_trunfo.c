@@ -137,6 +137,7 @@ int main() {
             else{
                 printf("Empate");
             }
+            break;
 
         //Caso seja area escolhida
         case 2:
@@ -152,7 +153,8 @@ int main() {
             else{
                 printf("Empate");
             }
-        
+            break;
+
         //Caso seja PIB escolhida
         case 3: 
             printf("%s || %s\n", cidade1,cidade2);
@@ -167,6 +169,24 @@ int main() {
             else{
                 printf("Empate");
             }
+            break;
+
+        //Caso seja Ponto turisticos
+        case 4: 
+            printf("%s || %s\n", cidade1,cidade2);
+            printf("Atributo:PIB\n");
+            printf("Valor da primeira carta %d, Valor da segunda carta %d\n", ponto_turisticos1,ponto_turisticos2);
+            if (ponto_turisticos1 > ponto_turisticos2){
+                printf("A carta vencedora foi a primeira carta:%d",ponto_turisticos1);
+            }
+            else if (ponto_turisticos2 > ponto_turisticos1){
+                printf("A carta vencedora foi a segunda carta:%d",ponto_turisticos2);
+            }
+            else{
+                printf("Empate");
+            }
+            break;
+        
     }
 
     return 0;
