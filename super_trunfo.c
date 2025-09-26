@@ -109,7 +109,7 @@ int main() {
     printf("Densidade Populacional: %f\n", densidade2);
     printf("PIB per Capita: %f\n", pib_capita2);
 
-
+    // MENU DE SELEÃO PARA O SWITCH CASE
     printf("Agora escolha um atributo para fazer a comparação\n");
     printf("1.População\n");
     printf("2.Área\n");
@@ -119,7 +119,39 @@ int main() {
     printf("Escolha aqui: \n");
     scanf("%d", &num);
 
-    switch (num)
+    // switch referente a escolha a cima 
+
+    switch (num){
+        //Caso seja população escolhida
+        case 1:
+            printf("%c || %c\n", estado1,estado2);
+            printf("Atributo:População\n");
+            printf("Valor da primeira carta %d, Valor da segunda carta %d\n", populacao1,populacao2);
+            if (populacao1 > populacao2){
+                printf("A carta vencedora foi a primeira carta:%d",populacao1);
+            }
+            else if (ponto_turisticos2 > populacao1){
+                printf("A carta vencedora foi a segunda carta:%d",populacao2);
+            }
+            else{
+                printf("Empate");
+            }
+        //Caso seja area escolhida
+        case 2:
+            printf("%c || %c\n", estado1,estado2);
+            printf("Atributo:Área\n");
+            printf("Valor da primeira carta %d, Valor da segunda carta %d\n", area1,area2);
+            if (area1 > area2){
+                printf("A carta vencedora foi a primeira carta:%d",area1);
+            }
+            else if (area2 > area1){
+                printf("A carta vencedora foi a segunda carta:%d",area2);
+            }
+            else{
+                printf("Empate");
+            }
+            
+    }
 
     return 0;
 }
